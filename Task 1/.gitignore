@@ -1,0 +1,28 @@
+# Environments
+venv/
+env/
+.venv/
+.env/
+
+# Environment Variables (CRITICAL: Never commit API keys!)
+.env
+
+# Pytest & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Python Byte-compiled / Optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
