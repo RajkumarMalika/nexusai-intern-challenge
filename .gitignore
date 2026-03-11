@@ -1,0 +1,49 @@
+# =========================
+# Environment Variables
+# =========================
+# CRITICAL: Never commit your API keys or database passwords to a public repo!
+.env
+.env.*
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.venv/
+env/
+.env_dir/
+
+# =========================
+# Python Cache & Bytecode
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# =========================
+# Testing (Pytest)
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# =========================
+# IDEs and Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS Generated Files
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
