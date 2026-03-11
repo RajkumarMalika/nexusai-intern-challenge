@@ -20,32 +20,37 @@ This repository contains my complete submission for the NexusAI Backend Engineer
    cd nexusai-intern-challenge
 Install dependencies:
 
-Bash
+```Bash
 pip install -r requirements.txt
+
 Environment Variables:
 For task1 and task2, you will need a .env file in the root directory.
 
 Plaintext
 OPENAI_API_KEY=sk-proj-your-key-here
 DATABASE_URL=postgresql://postgres:yourpassword@localhost:5432/postgres
+
 How to Run the Tasks
 Task 1: AI Message Handler
 To verify the error handling, timeouts, and rate-limit retries without incurring live API costs, run the mocked test suite:
 
-Bash
+```Bash
 pytest task1/test_handler.py -v
+
 Task 2: Database Repository
 Ensure your local PostgreSQL instance is running and the DATABASE_URL is set in your .env. To build the schema, insert a test record, and run the analytics query:
 
-Bash
+```Bash
 python task2/test_db.py
+
 Task 3: Parallel Data Fetcher
 To demonstrate the >2x latency speedup and the graceful handling of the injected 10% timeout failure:
 
-Bash
+```Bash
 python task3/main.py
+
 Task 4: Escalation Decision Engine
 To validate the 6 escalation rules and edge cases via the TDD test suite:
 
-Bash
+```Bash
 pytest task4/ -v
